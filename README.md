@@ -4,4 +4,5 @@
 - 2.Subtraction
 - 3.Multiplication
 - 4.Division
+- 5.Exit from program
 - And displays the result of the operation on the screen 
