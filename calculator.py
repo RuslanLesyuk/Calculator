@@ -40,16 +40,15 @@ while True:
             num1 = float(input("Enter the first number: "))
             break
         except ValueError:
-            print("Invalid input. Please enter a valid number for the first number.")
-            print("Please type the first number again.")
+            print("Invalid input. Please enter a valid number for the first number, for example (1,2,3,11,12,13,111,222,333).")
+            
 
     while True:
         try:
             num2 = float(input("Enter the second number: "))
             break
         except ValueError:
-            print("Invalid input. Please enter a valid number for the second number.")
-            print("Please type the second number again.") 
+            print("Invalid input. Please enter a valid number for the second number, for example (1,2,3,11,12,13,111,222,333).")
           
             
            
