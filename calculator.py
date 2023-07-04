@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/bin/env python3
 
 def addition(num1, num2):
     return num1 + num2
@@ -30,10 +30,29 @@ while True:
     if choice == "5":
         print("Exiting the calculator. Goodbye!")
         break
+    elif choice not in ["1", "2", "3", "4"]:
+        print("Invalid choice. Please try again.")
+        continue
+    
+    
+    while True:
+        try:
+            num1 = float(input("Enter the first number: "))
+            break
+        except ValueError:
+            print("Invalid input. Please enter a valid number for the first number.")
+            print("Please type the first number again.")
 
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
-
+    while True:
+        try:
+            num2 = float(input("Enter the second number: "))
+            break
+        except ValueError:
+            print("Invalid input. Please enter a valid number for the second number.")
+            print("Please type the second number again.") 
+          
+            
+           
     if choice == "1":
         result = addition(num1, num2)
         print("Result:", result)
@@ -48,3 +67,4 @@ while True:
         print("Result:", result)
     else:
         print("Invalid choice. Please try again.")
+
